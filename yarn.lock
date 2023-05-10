@@ -12471,9 +12471,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dpdm@patch:dpdm@npm%3A3.12.0#./.yarn/patches/dpdm-npm-3.12.0-0dfdd8e3b8.patch::locator=langchainjs%40workspace%3A.":
+"dpdm@patch:dpdm@npm%3A3.12.0#./.yarn/patches/dpdm-npm-3.12.0-0dfdd8e3b8.patch::locator=langchainjs-gpt4all%40workspace%3A.":
   version: 3.12.0
-  resolution: "dpdm@patch:dpdm@npm%3A3.12.0#./.yarn/patches/dpdm-npm-3.12.0-0dfdd8e3b8.patch::version=3.12.0&hash=2406a8&locator=langchainjs%40workspace%3A."
+  resolution: "dpdm@patch:dpdm@npm%3A3.12.0#./.yarn/patches/dpdm-npm-3.12.0-0dfdd8e3b8.patch::version=3.12.0&hash=2406a8&locator=langchainjs-gpt4all%40workspace%3A."
   dependencies:
     "@types/fs-extra": ^11.0.1
     "@types/glob": ^8.0.0
@@ -18174,9 +18174,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"langchainjs@workspace:.":
+"langchainjs-gpt4all@workspace:.":
   version: 0.0.0-use.local
-  resolution: "langchainjs@workspace:."
+  resolution: "langchainjs-gpt4all@workspace:."
   dependencies:
     "@tsconfig/recommended": ^1.0.2
     dotenv: ^16.0.3
@@ -25376,9 +25376,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typedoc-plugin-markdown@patch:typedoc-plugin-markdown@npm%3A4.0.0-next.6#./.yarn/patches/typedoc-plugin-markdown-npm-4.0.0-next.6-96b4b47746.patch::locator=langchainjs%40workspace%3A.":
+"typedoc-plugin-markdown@patch:typedoc-plugin-markdown@npm%3A4.0.0-next.6#./.yarn/patches/typedoc-plugin-markdown-npm-4.0.0-next.6-96b4b47746.patch::locator=langchainjs-gpt4all%40workspace%3A.":
   version: 4.0.0-next.6
-  resolution: "typedoc-plugin-markdown@patch:typedoc-plugin-markdown@npm%3A4.0.0-next.6#./.yarn/patches/typedoc-plugin-markdown-npm-4.0.0-next.6-96b4b47746.patch::version=4.0.0-next.6&hash=a0cf58&locator=langchainjs%40workspace%3A."
+  resolution: "typedoc-plugin-markdown@patch:typedoc-plugin-markdown@npm%3A4.0.0-next.6#./.yarn/patches/typedoc-plugin-markdown-npm-4.0.0-next.6-96b4b47746.patch::version=4.0.0-next.6&hash=a0cf58&locator=langchainjs-gpt4all%40workspace%3A."
   peerDependencies:
     prettier: ">=1.8.0"
     typedoc: ">=0.24.0"

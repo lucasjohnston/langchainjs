@@ -67,6 +67,9 @@ llms/hf.d.ts
 llms/replicate.cjs
 llms/replicate.js
 llms/replicate.d.ts
+llms/gpt4all.cjs
+llms/gpt4all.js
+llms/gpt4all.d.ts
 prompts.cjs
 prompts.js
 prompts.d.ts

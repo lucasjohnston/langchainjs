@@ -36,6 +36,7 @@ const entrypoints = {
   "llms/cohere": "llms/cohere",
   "llms/hf": "llms/hf",
   "llms/replicate": "llms/replicate",
+  "llms/gpt4all": "llms/gpt4all",
   // prompts
   prompts: "prompts/index",
   "prompts/load": "prompts/load",
@@ -151,6 +152,7 @@ const requiresOptionalDependency = [
   "llms/cohere",
   "llms/hf",
   "llms/replicate",
+  "llms/gpt4all",
   "prompts/load",
   "vectorstores/chroma",
   "vectorstores/hnswlib",

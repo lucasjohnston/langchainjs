@@ -32,7 +32,7 @@ The most basic building block of LangChain is calling an LLM on some input. Let'
 In order to do this, we first need to import the LLM wrapper.
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
 ```
 
 We will then need to set the environment variable for the OpenAI key. Three options here:
@@ -119,7 +119,7 @@ This is easy to do with LangChain!
 First lets define the prompt template:
 
 ```typescript
-import { PromptTemplate } from "langchain/prompts";
+import { PromptTemplate } from "langchain-gpt4all/prompts";
 
 const template = "What is a good name for a company that makes {product}?";
 const prompt = new PromptTemplate({
@@ -150,8 +150,8 @@ The most core type of chain is an LLMChain, which consists of a PromptTemplate a
 Extending the previous example, we can construct an LLMChain which takes user input, formats it with a PromptTemplate, and then passes the formatted response to an LLM.
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
-import { PromptTemplate } from "langchain/prompts";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { PromptTemplate } from "langchain-gpt4all/prompts";
 
 const model = new OpenAI({ temperature: 0.9 });
 const template = "What is a good name for a company that makes {product}?";
@@ -164,7 +164,7 @@ const prompt = new PromptTemplate({
 We can now create a very simple chain that will take user input, format the prompt with it, and then send it to the LLM:
 
 ```typescript
-import { LLMChain } from "langchain/chains";
+import { LLMChain } from "langchain-gpt4all/chains";
 
 const chain = new LLMChain({ llm: model, prompt: prompt });
 ```
@@ -211,10 +211,10 @@ npm install -S serpapi
 Now we can get started!
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
-import { initializeAgentExecutorWithOptions } from "langchain/agents";
-import { SerpAPI } from "langchain/tools";
-import { Calculator } from "langchain/tools/calculator";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { initializeAgentExecutorWithOptions } from "langchain-gpt4all/agents";
+import { SerpAPI } from "langchain-gpt4all/tools";
+import { Calculator } from "langchain-gpt4all/tools/calculator";
 
 const model = new OpenAI({ temperature: 0 });
 const tools = [
@@ -242,8 +242,8 @@ console.log(`Got output ${result.output}`);
 ```
 
 ```shell
-langchain-examples:start: Executing with input "Who is Olivia Wilde's boyfriend? What is his current age raised to the 0.23 power?"...
-langchain-examples:start: Got output Olivia Wilde's boyfriend is Jason Sudeikis, and his current age raised to the 0.23 power is 2.4242784855673896.
+langchain-gpt4all-examples:start: Executing with input "Who is Olivia Wilde's boyfriend? What is his current age raised to the 0.23 power?"...
+langchain-gpt4all-examples:start: Got output Olivia Wilde's boyfriend is Jason Sudeikis, and his current age raised to the 0.23 power is 2.4242784855673896.
 ```
 
 ### Memory: Add State to Chains and Agents
@@ -255,9 +255,9 @@ LangChain provides several specially created chains just for this purpose. This 
 By default, the `ConversationChain` has a simple type of memory that remembers all previous inputs/outputs and adds them to the context that is passed. Let's take a look at using this chain.
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
-import { BufferMemory } from "langchain/memory";
-import { ConversationChain } from "langchain/chains";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { BufferMemory } from "langchain-gpt4all/memory";
+import { ConversationChain } from "langchain-gpt4all/chains";
 
 const model = new OpenAI({});
 const memory = new BufferMemory();

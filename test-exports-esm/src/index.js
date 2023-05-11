@@ -1,13 +1,13 @@
 import assert from "assert";
-import { OpenAI } from "langchain/llms/openai";
-import { LLMChain } from "langchain/chains";
-import { ChatPromptTemplate } from "langchain/prompts";
-import { loadPrompt } from "langchain/prompts/load";
-import { HNSWLib } from "langchain/vectorstores/hnswlib";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { InMemoryDocstore, Document } from "langchain/docstore";
-import { CSVLoader } from "langchain/document_loaders/fs/csv";
-import { CallbackManager } from "langchain/callbacks";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { LLMChain } from "langchain-gpt4all/chains";
+import { ChatPromptTemplate } from "langchain-gpt4all/prompts";
+import { loadPrompt } from "langchain-gpt4all/prompts/load";
+import { HNSWLib } from "langchain-gpt4all/vectorstores/hnswlib";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { InMemoryDocstore, Document } from "langchain-gpt4all/docstore";
+import { CSVLoader } from "langchain-gpt4all/document_loaders/fs/csv";
+import { CallbackManager } from "langchain-gpt4all/callbacks";
 
 // Test exports
 assert(typeof OpenAI === "function");

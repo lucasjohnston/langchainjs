@@ -1,5 +1,5 @@
-import { HNSWLib } from "langchain/vectorstores/hnswlib";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { HNSWLib } from "langchain-gpt4all/vectorstores/hnswlib";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
 
 export const run = async () => {
   const vectorStore = await HNSWLib.fromTexts(

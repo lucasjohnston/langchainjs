@@ -2,24 +2,24 @@ import {
   LLMSingleActionAgent,
   AgentActionOutputParser,
   AgentExecutor,
-} from "langchain/agents";
-import { LLMChain } from "langchain/chains";
-import { OpenAI } from "langchain/llms/openai";
+} from "langchain-gpt4all/agents";
+import { LLMChain } from "langchain-gpt4all/chains";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
 import {
   BasePromptTemplate,
   BaseStringPromptTemplate,
   SerializedBasePromptTemplate,
   renderTemplate,
-} from "langchain/prompts";
+} from "langchain-gpt4all/prompts";
 import {
   InputValues,
   PartialValues,
   AgentStep,
   AgentAction,
   AgentFinish,
-} from "langchain/schema";
-import { SerpAPI, Tool } from "langchain/tools";
-import { Calculator } from "langchain/tools/calculator";
+} from "langchain-gpt4all/schema";
+import { SerpAPI, Tool } from "langchain-gpt4all/tools";
+import { Calculator } from "langchain-gpt4all/tools/calculator";
 
 const PREFIX = `Answer the following questions as best you can. You have access to the following tools:`;
 const formatInstructions = (

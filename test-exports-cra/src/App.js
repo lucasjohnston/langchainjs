@@ -4,15 +4,15 @@
 import "./entrypoints.js";
 
 // Import a few things we'll use to test the exports
-import { LLMChain } from "langchain/chains";
-import { ChatOpenAI } from "langchain/chat_models/openai";
+import { LLMChain } from "langchain-gpt4all/chains";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
-} from "langchain/prompts";
+} from "langchain-gpt4all/prompts";
 
 import { useCallback } from "react";
-import { CallbackManager } from "langchain/callbacks";
+import { CallbackManager } from "langchain-gpt4all/callbacks";
 
 // Don't do this in your app, it would leak your API key
 const OPENAI_API_KEY = process.env.REACT_APP_OPENAI_API_KEY;

@@ -1,6 +1,6 @@
-import { OpenAI } from "langchain/llms/openai";
-import { PromptTemplate } from "langchain/prompts";
-import { LLMChain } from "langchain/chains";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { PromptTemplate } from "langchain-gpt4all/prompts";
+import { LLMChain } from "langchain-gpt4all/chains";
 
 export const run = async () => {
   const model = new OpenAI({

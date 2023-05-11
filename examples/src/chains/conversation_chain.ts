@@ -1,5 +1,5 @@
-import { OpenAI } from "langchain/llms/openai";
-import { ConversationChain } from "langchain/chains";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { ConversationChain } from "langchain-gpt4all/chains";
 
 export const run = async () => {
   const model = new OpenAI({});

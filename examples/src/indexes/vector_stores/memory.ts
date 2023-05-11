@@ -1,5 +1,5 @@
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { MemoryVectorStore } from "langchain-gpt4all/vectorstores/memory";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
 
 export const run = async () => {
   const vectorStore = await MemoryVectorStore.fromTexts(

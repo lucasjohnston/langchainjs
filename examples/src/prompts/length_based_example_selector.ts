@@ -2,7 +2,7 @@ import {
   LengthBasedExampleSelector,
   PromptTemplate,
   FewShotPromptTemplate,
-} from "langchain/prompts";
+} from "langchain-gpt4all/prompts";
 
 export async function run() {
   // Create a prompt template that will be used to format the examples.

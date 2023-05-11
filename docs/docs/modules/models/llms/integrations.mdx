@@ -10,7 +10,7 @@ LangChain offers a number of LLM implementations that integrate with various mod
 ## `OpenAI`
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
 
 const model = new OpenAI({
   temperature: 0.9,
@@ -25,7 +25,7 @@ console.log({ res });
 ## Azure `OpenAI`
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
 
 const model = new OpenAI({
   temperature: 0.9,
@@ -47,7 +47,7 @@ npm install @huggingface/inference@1
 ```
 
 ```typescript
-import { HuggingFaceInference } from "langchain/llms/hf";
+import { HuggingFaceInference } from "langchain-gpt4all/llms/hf";
 
 const model = new HuggingFaceInference({
   model: "gpt2",
@@ -64,7 +64,7 @@ npm install cohere-ai
 ```
 
 ```typescript
-import { Cohere } from "langchain/llms/cohere";
+import { Cohere } from "langchain-gpt4all/llms/cohere";
 
 const model = new Cohere({
   maxTokens: 20,
@@ -83,7 +83,7 @@ npm install replicate
 ```
 
 ```typescript
-import { Replicate } from "langchain/llms/replicate";
+import { Replicate } from "langchain-gpt4all/llms/replicate";
 
 const model = new Replicate({
   model:
@@ -103,7 +103,7 @@ npm install gpt4all
 ```
 
 ```typescript
-import { GPT4All } from "langchain/llms/gpt4all";
+import { GPT4All } from "langchain-gpt4all/llms/gpt4all";
 
 const model = new GPT4All({
   model: "gpt4all-lora-unfiltered-quantized",
@@ -126,7 +126,7 @@ LangChain integrates with PromptLayer for logging and debugging prompts and resp
 2. Create an API token and pass it either as `promptLayerApiKey` argument in the `PromptLayerOpenAI` constructor or in the `PROMPTLAYER_API_KEY` environment variable.
 
 ```typescript
-import { PromptLayerOpenAI } from "langchain/llms/openai";
+import { PromptLayerOpenAI } from "langchain-gpt4all/llms/openai";
 
 const model = new PromptLayerOpenAI({
   temperature: 0.9,
@@ -146,7 +146,7 @@ LangChain integrates with PromptLayer for logging and debugging prompts and resp
 2. Create an API token and pass it either as `promptLayerApiKey` argument in the `PromptLayerOpenAI` constructor or in the `PROMPTLAYER_API_KEY` environment variable.
 
 ```typescript
-import { PromptLayerOpenAI } from "langchain/llms/openai";
+import { PromptLayerOpenAI } from "langchain-gpt4all/llms/openai";
 
 const model = new PromptLayerOpenAI({
   temperature: 0.9,

@@ -21,7 +21,7 @@ LangChain is written in TypeScript and can be used in:
 
 ## Quickstart
 
-If you want to get started quickly on using LangChain in Node.js, [clone this repository](https://github.com/domeccleston/langchain-ts-starter) and follow the README instructions for a boilerplate project with those dependencies set up.
+If you want to get started quickly on using LangChain in Node.js, [clone this repository](https://github.com/domeccleston/langchain-gpt4all-ts-starter) and follow the README instructions for a boilerplate project with those dependencies set up.
 
 If you prefer to set things up yourself, or you want to run LangChain in other environments, read on for instructions.
 
@@ -30,7 +30,7 @@ If you prefer to set things up yourself, or you want to run LangChain in other e
 To get started, install LangChain with the following command:
 
 ```bash npm2yarn
-npm install -S langchain
+npm install -S langchain-gpt4all
 ```
 
 ### TypeScript
@@ -44,7 +44,7 @@ LangChain is written in TypeScript and provides type definitions for all of its 
 LangChain provides an ESM build targeting Node.js environments. You can import it using the following syntax:
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
 ```
 
 If you are using TypeScript in an ESM project we suggest updating your `tsconfig.json` to include the following:
@@ -64,7 +64,7 @@ If you are using TypeScript in an ESM project we suggest updating your `tsconfig
 LangChain provides a CommonJS build targeting Node.js environments. You can import it using the following syntax:
 
 ```typescript
-const { OpenAI } = require("langchain/llms/openai");
+const { OpenAI } = require("langchain-gpt4all/llms/openai");
 ```
 
 ### Cloudflare Workers
@@ -72,7 +72,7 @@ const { OpenAI } = require("langchain/llms/openai");
 LangChain can be used in Cloudflare Workers. You can import it using the following syntax:
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
 ```
 
 ### Vercel / Next.js
@@ -80,7 +80,7 @@ import { OpenAI } from "langchain/llms/openai";
 LangChain can be used in Vercel / Next.js. We support using LangChain in frontend components, in Serverless functions and in Edge functions. You can import it using the following syntax:
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
 ```
 
 To use LangChain with Next.js (either with app/ or pages/), add the following to your `next.config.js` to enable support for WebAssembly modules (which is required by the tokenizer library `@dqbd/tiktoken`):
@@ -103,17 +103,17 @@ const nextConfig = {
 LangChain can be used in Deno / Supabase Edge Functions. You can import it using the following syntax:
 
 ```typescript
-import { OpenAI } from "https://esm.sh/langchain/llms/openai";
+import { OpenAI } from "https://esm.sh/langchain-gpt4all/llms/openai";
 ```
 
-We recommend looking at our [Supabase Template](https://github.com/langchain-ai/langchain-template-supabase) for an example of how to use LangChain in Supabase Edge Functions.
+We recommend looking at our [Supabase Template](https://github.com/langchain-gpt4all-ai/langchain-gpt4all-template-supabase) for an example of how to use LangChain in Supabase Edge Functions.
 
 ### Browser
 
 LangChain can be used in the browser. In our CI we test bundling LangChain with Webpack and Vite, but other bundlers should work too. You can import it using the following syntax:
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
 ```
 
 #### Create React App
@@ -145,38 +145,38 @@ If you are updating from a version of LangChain prior to 0.0.52, you will need t
 For example, if you were previously doing
 
 ```typescript
-import { OpenAI } from "langchain/llms";
+import { OpenAI } from "langchain-gpt4all/llms";
 ```
 
 you will now need to do
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
 ```
 
 This applies to all imports from the following 6 modules, which have been split into submodules for each integration. The combined modules are deprecated, do not work outside of Node.js, and will be removed in a future version.
 
-- If you were using `langchain/llms`, see [LLMs](../modules/models/llms/integrations) for updated import paths.
-- If you were using `langchain/chat_models`, see [Chat Models](../modules/models/chat/integrations) for updated import paths.
-- If you were using `langchain/embeddings`, see [Embeddings](../modules/models/embeddings/integrations) for updated import paths.
-- If you were using `langchain/vectorstores`, see [Vector Stores](../modules/indexes/vector_stores/integrations/) for updated import paths.
-- If you were using `langchain/document_loaders`, see [Document Loaders](../modules/indexes/document_loaders/examples/) for updated import paths.
-- If you were using `langchain/retrievers`, see [Retrievers](../modules/indexes/retrievers/) for updated import paths.
+- If you were using `langchain-gpt4all/llms`, see [LLMs](../modules/models/llms/integrations) for updated import paths.
+- If you were using `langchain-gpt4all/chat_models`, see [Chat Models](../modules/models/chat/integrations) for updated import paths.
+- If you were using `langchain-gpt4all/embeddings`, see [Embeddings](../modules/models/embeddings/integrations) for updated import paths.
+- If you were using `langchain-gpt4all/vectorstores`, see [Vector Stores](../modules/indexes/vector_stores/integrations/) for updated import paths.
+- If you were using `langchain-gpt4all/document_loaders`, see [Document Loaders](../modules/indexes/document_loaders/examples/) for updated import paths.
+- If you were using `langchain-gpt4all/retrievers`, see [Retrievers](../modules/indexes/retrievers/) for updated import paths.
 
 Other modules are not affected by this change, and you can continue to import them from the same path.
 
 Additionally, there are some breaking changes that were needed to support new environments:
 
-- `import { Calculator } from "langchain/tools";` now moved to
-  - `import { Calculator } from "langchain/tools/calculator";`
-- `import { loadLLM } from "langchain/llms";` now moved to
-  - `import { loadLLM } from "langchain/llms/load";`
-- `import { loadAgent } from "langchain/agents";` now moved to
-  - `import { loadAgent } from "langchain/agents/load";`
-- `import { loadPrompt } from "langchain/prompts";` now moved to
-  - `import { loadPrompt } from "langchain/prompts/load";`
-- `import { loadChain } from "langchain/chains";` now moved to
-  - `import { loadChain } from "langchain/chains/load";`
+- `import { Calculator } from "langchain-gpt4all/tools";` now moved to
+  - `import { Calculator } from "langchain-gpt4all/tools/calculator";`
+- `import { loadLLM } from "langchain-gpt4all/llms";` now moved to
+  - `import { loadLLM } from "langchain-gpt4all/llms/load";`
+- `import { loadAgent } from "langchain-gpt4all/agents";` now moved to
+  - `import { loadAgent } from "langchain-gpt4all/agents/load";`
+- `import { loadPrompt } from "langchain-gpt4all/prompts";` now moved to
+  - `import { loadPrompt } from "langchain-gpt4all/prompts/load";`
+- `import { loadChain } from "langchain-gpt4all/chains";` now moved to
+  - `import { loadChain } from "langchain-gpt4all/chains/load";`
 
 ## Unsupported: Node.js 16
 

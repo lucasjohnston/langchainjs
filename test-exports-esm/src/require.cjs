@@ -1,12 +1,12 @@
 const assert = require("assert");
-const { OpenAI } = require("langchain/llms/openai");
-const { LLMChain } = require("langchain/chains");
-const { ChatPromptTemplate } = require("langchain/prompts");
-const { loadPrompt } = require("langchain/prompts/load");
-const { HNSWLib } = require("langchain/vectorstores/hnswlib");
-const { OpenAIEmbeddings } = require("langchain/embeddings/openai");
-const { InMemoryDocstore, Document } = require("langchain/docstore");
-const { CSVLoader } = require("langchain/document_loaders/fs/csv");
+const { OpenAI } = require("langchain-gpt4all/llms/openai");
+const { LLMChain } = require("langchain-gpt4all/chains");
+const { ChatPromptTemplate } = require("langchain-gpt4all/prompts");
+const { loadPrompt } = require("langchain-gpt4all/prompts/load");
+const { HNSWLib } = require("langchain-gpt4all/vectorstores/hnswlib");
+const { OpenAIEmbeddings } = require("langchain-gpt4all/embeddings/openai");
+const { InMemoryDocstore, Document } = require("langchain-gpt4all/docstore");
+const { CSVLoader } = require("langchain-gpt4all/document_loaders/fs/csv");
 
 async function test() {
   // Test exports

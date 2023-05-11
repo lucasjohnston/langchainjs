@@ -1,7 +1,7 @@
-import { OpenAI } from "langchain/llms/openai";
-import { initializeAgentExecutorWithOptions } from "langchain/agents";
-import { SerpAPI } from "langchain/tools";
-import { Calculator } from "langchain/tools/calculator";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { initializeAgentExecutorWithOptions } from "langchain-gpt4all/agents";
+import { SerpAPI } from "langchain-gpt4all/tools";
+import { Calculator } from "langchain-gpt4all/tools/calculator";
 import process from "process";
 
 export const run = async () => {

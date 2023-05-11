@@ -1,12 +1,12 @@
-import { LLMChain } from "langchain/chains";
-import { ChatOpenAI } from "langchain/chat_models/openai";
-import { ZeroShotAgent, AgentExecutor } from "langchain/agents";
-import { SerpAPI } from "langchain/tools";
+import { LLMChain } from "langchain-gpt4all/chains";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
+import { ZeroShotAgent, AgentExecutor } from "langchain-gpt4all/agents";
+import { SerpAPI } from "langchain-gpt4all/tools";
 import {
   ChatPromptTemplate,
   SystemMessagePromptTemplate,
   HumanMessagePromptTemplate,
-} from "langchain/prompts";
+} from "langchain-gpt4all/prompts";
 
 export const run = async () => {
   const tools = [

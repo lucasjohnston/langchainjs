@@ -1,7 +1,7 @@
 import "@tensorflow/tfjs-backend-cpu";
-import { Document } from "langchain/document";
-import { TensorFlowEmbeddings } from "langchain/embeddings/tensorflow";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
+import { Document } from "langchain-gpt4all/document";
+import { TensorFlowEmbeddings } from "langchain-gpt4all/embeddings/tensorflow";
+import { MemoryVectorStore } from "langchain-gpt4all/vectorstores/memory";
 
 const embeddings = new TensorFlowEmbeddings();
 const store = new MemoryVectorStore(embeddings);

@@ -22,8 +22,8 @@ To get started, follow the [installation instructions](./install) to install Lan
 This section covers how to get started with chat models. The interface is based around messages rather than raw text.
 
 ```typescript
-import { ChatOpenAI } from "langchain/chat_models/openai";
-import { HumanChatMessage, SystemChatMessage } from "langchain/schema";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
+import { HumanChatMessage, SystemChatMessage } from "langchain-gpt4all/schema";
 
 const chat = new ChatOpenAI({ temperature: 0 });
 ```
@@ -128,7 +128,7 @@ import {
   SystemMessagePromptTemplate,
   HumanMessagePromptTemplate,
   ChatPromptTemplate,
-} from "langchain/prompts";
+} from "langchain-gpt4all/prompts";
 ```
 
 First we create a reusable template:

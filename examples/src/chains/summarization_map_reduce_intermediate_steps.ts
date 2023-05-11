@@ -1,6 +1,6 @@
-import { OpenAI } from "langchain/llms/openai";
-import { loadSummarizationChain } from "langchain/chains";
-import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { loadSummarizationChain } from "langchain-gpt4all/chains";
+import { RecursiveCharacterTextSplitter } from "langchain-gpt4all/text_splitter";
 import * as fs from "fs";
 
 export const run = async () => {

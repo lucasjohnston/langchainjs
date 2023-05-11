@@ -1,8 +1,8 @@
-import { AgentExecutor, ZeroShotAgent } from "langchain/agents";
-import { LLMChain } from "langchain/chains";
-import { OpenAI } from "langchain/llms/openai";
-import { SerpAPI } from "langchain/tools";
-import { Calculator } from "langchain/tools/calculator";
+import { AgentExecutor, ZeroShotAgent } from "langchain-gpt4all/agents";
+import { LLMChain } from "langchain-gpt4all/chains";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { SerpAPI } from "langchain-gpt4all/tools";
+import { Calculator } from "langchain-gpt4all/tools/calculator";
 
 export const run = async () => {
   const model = new OpenAI({ temperature: 0 });

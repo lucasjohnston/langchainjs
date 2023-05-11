@@ -1,5 +1,5 @@
-import { MultiPromptChain } from "langchain/chains";
-import { OpenAIChat } from "langchain/llms/openai";
+import { MultiPromptChain } from "langchain-gpt4all/chains";
+import { OpenAIChat } from "langchain-gpt4all/llms/openai";
 
 export const run = async () => {
   const llm = new OpenAIChat();

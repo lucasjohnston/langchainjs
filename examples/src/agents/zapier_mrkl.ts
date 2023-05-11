@@ -1,9 +1,9 @@
-import { OpenAI } from "langchain/llms/openai";
-import { ZapierNLAWrapper } from "langchain/tools";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { ZapierNLAWrapper } from "langchain-gpt4all/tools";
 import {
   initializeAgentExecutorWithOptions,
   ZapierToolKit,
-} from "langchain/agents";
+} from "langchain-gpt4all/agents";
 
 const model = new OpenAI({ temperature: 0 });
 const zapier = new ZapierNLAWrapper();

@@ -34,7 +34,7 @@
     "chromadb": "^1.4.0",
     "graphql": "^16.6.0",
     "js-yaml": "^4.1.0",
-    "langchain": "workspace:*",
+    "langchain-gpt4all": "workspace:*",
     "ml-distance": "^4.0.0",
     "mongodb": "^5.2.0",
     "prisma": "^4.11.0",

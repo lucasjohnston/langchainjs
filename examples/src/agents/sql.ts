@@ -1,6 +1,6 @@
-import { OpenAI } from "langchain/llms/openai";
-import { SqlDatabase } from "langchain/sql_db";
-import { createSqlAgent, SqlToolkit } from "langchain/agents";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { SqlDatabase } from "langchain-gpt4all/sql_db";
+import { createSqlAgent, SqlToolkit } from "langchain-gpt4all/agents";
 import { DataSource } from "typeorm";
 
 /** This example uses Chinook database, which is a sample database available for SQL Server, Oracle, MySQL, etc.

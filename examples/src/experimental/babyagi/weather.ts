@@ -1,7 +1,7 @@
-import { BabyAGI } from "langchain/experimental/babyagi";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { OpenAI } from "langchain/llms/openai";
+import { BabyAGI } from "langchain-gpt4all/experimental/babyagi";
+import { MemoryVectorStore } from "langchain-gpt4all/vectorstores/memory";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
 
 const vectorStore = new MemoryVectorStore(new OpenAIEmbeddings());
 

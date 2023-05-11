@@ -18,15 +18,15 @@ Langchain.js accepts [@opensearch-project/opensearch](https://opensearch.org/doc
 npm install -S @opensearch-project/opensearch
 ```
 
-You'll also need to have an OpenSearch instance running. You can use the [official Docker image](https://opensearch.org/docs/latest/opensearch/install/docker/) to get started. You can also find an example docker-compose file [here](https://github.com/hwchase17/langchainjs/blob/main/examples/src/indexes/vector_stores/opensearch/docker-compose.yml).
+You'll also need to have an OpenSearch instance running. You can use the [official Docker image](https://opensearch.org/docs/latest/opensearch/install/docker/) to get started. You can also find an example docker-compose file [here](https://github.com/lucasjohnston/langchainjs-gpt4all/blob/main/examples/src/indexes/vector_stores/opensearch/docker-compose.yml).
 
 ## Index docs
 
 ```typescript
 import { Client } from "@opensearch-project/opensearch";
-import { Document } from "langchain/document";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { OpenSearchVectorStore } from "langchain/vectorstores/opensearch";
+import { Document } from "langchain-gpt4all/document";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { OpenSearchVectorStore } from "langchain-gpt4all/vectorstores/opensearch";
 
 const client = new Client({
   nodes: [process.env.OPENSEARCH_URL ?? "http://127.0.0.1:9200"],
@@ -62,10 +62,10 @@ await OpenSearchVectorStore.fromDocuments(docs, new OpenAIEmbeddings(), {
 
 ```typescript
 import { Client } from "@opensearch-project/opensearch";
-import { VectorDBQAChain } from "langchain/chains";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { OpenAI } from "langchain/llms/openai";
-import { OpenSearchVectorStore } from "langchain/vectorstores/opensearch";
+import { VectorDBQAChain } from "langchain-gpt4all/chains";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { OpenSearchVectorStore } from "langchain-gpt4all/vectorstores/opensearch";
 
 const client = new Client({
   nodes: [process.env.OPENSEARCH_URL ?? "http://127.0.0.1:9200"],

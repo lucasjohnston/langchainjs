@@ -3,9 +3,9 @@
 BufferMemory is the simplest type of memory - it just remembers previous conversational back and forths directly.
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
-import { BufferMemory } from "langchain/memory";
-import { ConversationChain } from "langchain/chains";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { BufferMemory } from "langchain-gpt4all/memory";
+import { ConversationChain } from "langchain-gpt4all/chains";
 
 const model = new OpenAI({});
 const memory = new BufferMemory();
@@ -31,8 +31,8 @@ You can also load messages into a `BufferMemory` instance by creating and passin
 This lets you easily pick up state from past conversations:
 
 ```typescript
-import { ChatMessageHistory } from "langchain/memory";
-import { HumanChatMessage, AIChatMessage } from "langchain/schema";
+import { ChatMessageHistory } from "langchain-gpt4all/memory";
+import { HumanChatMessage, AIChatMessage } from "langchain-gpt4all/schema";
 
 const pastMessages = [
   new HumanChatMessage("My name's Jonas"),

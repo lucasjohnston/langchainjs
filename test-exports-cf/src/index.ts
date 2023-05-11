@@ -12,15 +12,15 @@
 import "./entrypoints.js";
 
 // Import a few things we'll use to test the exports
-import { LLMChain } from "langchain/chains";
-import { ChatOpenAI } from "langchain/chat_models/openai";
+import { LLMChain } from "langchain-gpt4all/chains";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
-} from "langchain/prompts";
-import { OpenAI } from "langchain/llms/openai";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { HNLoader } from "langchain/document_loaders/web/hn";
+} from "langchain-gpt4all/prompts";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { HNLoader } from "langchain-gpt4all/document_loaders/web/hn";
 
 export interface Env {
   OPENAI_API_KEY?: string;
@@ -36,17 +36,16 @@ export default {
     env: Env,
     ctx: ExecutionContext
   ): Promise<Response> {
-
-    const constructorParameters
-      = env.AZURE_OPENAI_API_KEY ? {
-        azureOpenAIApiKey: env.AZURE_OPENAI_API_KEY,
-        azureOpenAIApiInstanceName: env.AZURE_OPENAI_API_INSTANCE_NAME,
-        azureOpenAIApiDeploymentName: env.AZURE_OPENAI_API_DEPLOYMENT_NAME,
-        azureOpenAIApiVersion: env.AZURE_OPENAI_API_VERSION,
-      } 
+    const constructorParameters = env.AZURE_OPENAI_API_KEY
+      ? {
+          azureOpenAIApiKey: env.AZURE_OPENAI_API_KEY,
+          azureOpenAIApiInstanceName: env.AZURE_OPENAI_API_INSTANCE_NAME,
+          azureOpenAIApiDeploymentName: env.AZURE_OPENAI_API_DEPLOYMENT_NAME,
+          azureOpenAIApiVersion: env.AZURE_OPENAI_API_VERSION,
+        }
       : {
-        openAIApiKey: env.OPENAI_API_KEY,
-      }
+          openAIApiKey: env.OPENAI_API_KEY,
+        };
 
     // Intantiate a few things to test the exports
     new OpenAI(constructorParameters);

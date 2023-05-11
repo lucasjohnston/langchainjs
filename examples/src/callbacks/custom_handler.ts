@@ -1,5 +1,9 @@
-import { BaseCallbackHandler } from "langchain/callbacks";
-import { AgentAction, AgentFinish, ChainValues } from "langchain/schema";
+import { BaseCallbackHandler } from "langchain-gpt4all/callbacks";
+import {
+  AgentAction,
+  AgentFinish,
+  ChainValues,
+} from "langchain-gpt4all/schema";
 
 export class MyCallbackHandler extends BaseCallbackHandler {
   name = "MyCallbackHandler";

@@ -1,9 +1,9 @@
-import { OpenAI } from "langchain/llms/openai";
-import { VectorStoreRetrieverMemory } from "langchain/memory";
-import { LLMChain } from "langchain/chains";
-import { PromptTemplate } from "langchain/prompts";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { VectorStoreRetrieverMemory } from "langchain-gpt4all/memory";
+import { LLMChain } from "langchain-gpt4all/chains";
+import { PromptTemplate } from "langchain-gpt4all/prompts";
+import { MemoryVectorStore } from "langchain-gpt4all/vectorstores/memory";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
 
 const vectorStore = new MemoryVectorStore(new OpenAIEmbeddings());
 const memory = new VectorStoreRetrieverMemory({

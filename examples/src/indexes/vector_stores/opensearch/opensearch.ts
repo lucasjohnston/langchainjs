@@ -1,6 +1,6 @@
 import { Client } from "@opensearch-project/opensearch";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { OpenSearchVectorStore } from "langchain/vectorstores/opensearch";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { OpenSearchVectorStore } from "langchain-gpt4all/vectorstores/opensearch";
 
 export async function run() {
   const client = new Client({

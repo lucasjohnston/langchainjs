@@ -5,9 +5,9 @@ This example shows how to load and use an agent with a JSON toolkit.
 ```typescript
 import * as fs from "fs";
 import * as yaml from "js-yaml";
-import { OpenAI } from "langchain/llms/openai";
-import { JsonSpec, JsonObject } from "langchain/tools";
-import { JsonToolkit, createJsonAgent } from "langchain/agents";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { JsonSpec, JsonObject } from "langchain-gpt4all/tools";
+import { JsonToolkit, createJsonAgent } from "langchain-gpt4all/agents";
 
 export const run = async () => {
   let data: JsonObject;

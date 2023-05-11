@@ -9,9 +9,9 @@ See instructions at [Motörhead](https://github.com/getmetal/motorhead) for runn
 ## Usage
 
 ```typescript
-import { ConversationChain } from "langchain/chains";
-import { ChatOpenAI } from "langchain/chat_models";
-import { MotorheadMemory } from "langchain/memory";
+import { ConversationChain } from "langchain-gpt4all/chains";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models";
+import { MotorheadMemory } from "langchain-gpt4all/memory";
 
 const model = new ChatOpenAI({});
 const memory = new MotorheadMemory({

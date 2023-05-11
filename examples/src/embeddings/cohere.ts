@@ -1,4 +1,4 @@
-import { CohereEmbeddings } from "langchain/embeddings/cohere";
+import { CohereEmbeddings } from "langchain-gpt4all/embeddings/cohere";
 
 export const run = async () => {
   const model = new CohereEmbeddings();

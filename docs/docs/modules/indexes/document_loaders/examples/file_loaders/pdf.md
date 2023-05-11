@@ -11,7 +11,7 @@ npm install pdf-parse
 ## Usage, one document per page
 
 ```typescript
-import { PDFLoader } from "langchain/document_loaders/fs/pdf";
+import { PDFLoader } from "langchain-gpt4all/document_loaders/fs/pdf";
 
 const loader = new PDFLoader("src/document_loaders/example_data/example.pdf");
 
@@ -21,7 +21,7 @@ const docs = await loader.load();
 ## Usage, one document per file
 
 ```typescript
-import { PDFLoader } from "langchain/document_loaders/fs/pdf";
+import { PDFLoader } from "langchain-gpt4all/document_loaders/fs/pdf";
 
 const loader = new PDFLoader("src/document_loaders/example_data/example.pdf", {
   splitPages: false,
@@ -41,7 +41,7 @@ npm install pdfjs-dist
 ```
 
 ```typescript
-import { PDFLoader } from "langchain/document_loaders/fs/pdf";
+import { PDFLoader } from "langchain-gpt4all/document_loaders/fs/pdf";
 
 const loader = new PDFLoader("src/document_loaders/example_data/example.pdf", {
   // you may need to add `.then(m => m.default)` to the end of the import

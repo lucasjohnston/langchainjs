@@ -1,13 +1,19 @@
 async function test() {
   const { default: assert } = await import("assert");
-  const { OpenAI } = await import("langchain/llms/openai");
-  const { LLMChain } = await import("langchain/chains");
-  const { ChatPromptTemplate } = await import("langchain/prompts");
-  const { loadPrompt } = await import("langchain/prompts/load");
-  const { HNSWLib } = await import("langchain/vectorstores/hnswlib");
-  const { OpenAIEmbeddings } = await import("langchain/embeddings/openai");
-  const { InMemoryDocstore, Document } = await import("langchain/docstore");
-  const { CSVLoader } = await import("langchain/document_loaders/fs/csv");
+  const { OpenAI } = await import("langchain-gpt4all/llms/openai");
+  const { LLMChain } = await import("langchain-gpt4all/chains");
+  const { ChatPromptTemplate } = await import("langchain-gpt4all/prompts");
+  const { loadPrompt } = await import("langchain-gpt4all/prompts/load");
+  const { HNSWLib } = await import("langchain-gpt4all/vectorstores/hnswlib");
+  const { OpenAIEmbeddings } = await import(
+    "langchain-gpt4all/embeddings/openai"
+  );
+  const { InMemoryDocstore, Document } = await import(
+    "langchain-gpt4all/docstore"
+  );
+  const { CSVLoader } = await import(
+    "langchain-gpt4all/document_loaders/fs/csv"
+  );
 
   // Test exports
   assert(typeof OpenAI === "function");

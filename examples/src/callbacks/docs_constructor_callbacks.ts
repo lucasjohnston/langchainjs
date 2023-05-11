@@ -1,5 +1,5 @@
-import { ConsoleCallbackHandler } from "langchain/callbacks";
-import { OpenAI } from "langchain/llms/openai";
+import { ConsoleCallbackHandler } from "langchain-gpt4all/callbacks";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
 
 const llm = new OpenAI({
   temperature: 0,

@@ -2,9 +2,9 @@ import {
   ConstitutionalPrinciple,
   ConstitutionalChain,
   LLMChain,
-} from "langchain/chains";
-import { OpenAI } from "langchain/llms/openai";
-import { PromptTemplate } from "langchain/prompts";
+} from "langchain-gpt4all/chains";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { PromptTemplate } from "langchain-gpt4all/prompts";
 
 export async function run() {
   // LLMs can produce harmful, toxic, or otherwise undesirable outputs. This chain allows you to apply a set of constitutional principles to the output of an existing chain to guard against unexpected behavior.

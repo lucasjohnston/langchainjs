@@ -1,4 +1,4 @@
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
 
 export const run = async () => {
   const embeddings = new OpenAIEmbeddings({

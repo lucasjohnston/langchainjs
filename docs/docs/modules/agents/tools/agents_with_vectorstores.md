@@ -7,14 +7,14 @@ The recommended method for doing so is to create a VectorDBQAChain and then use 
 First, you'll want to import the relevant modules:
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
-import { initializeAgentExecutorWithOptions } from "langchain/agents";
-import { SerpAPI, ChainTool } from "langchain/tools";
-import { Calculator } from "langchain/tools/calculator";
-import { VectorDBQAChain } from "langchain/chains";
-import { HNSWLib } from "langchain/vectorstores/hnswlib";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { initializeAgentExecutorWithOptions } from "langchain-gpt4all/agents";
+import { SerpAPI, ChainTool } from "langchain-gpt4all/tools";
+import { Calculator } from "langchain-gpt4all/tools/calculator";
+import { VectorDBQAChain } from "langchain-gpt4all/chains";
+import { HNSWLib } from "langchain-gpt4all/vectorstores/hnswlib";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { RecursiveCharacterTextSplitter } from "langchain-gpt4all/text_splitter";
 import * as fs from "fs";
 ```
 

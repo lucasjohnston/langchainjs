@@ -1,9 +1,9 @@
-import { AutoGPT } from "langchain/experimental/autogpt";
-import { ReadFileTool, WriteFileTool, SerpAPI } from "langchain/tools";
-import { NodeFileStore } from "langchain/stores/file/node";
-import { HNSWLib } from "langchain/vectorstores/hnswlib";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { ChatOpenAI } from "langchain/chat_models/openai";
+import { AutoGPT } from "langchain-gpt4all/experimental/autogpt";
+import { ReadFileTool, WriteFileTool, SerpAPI } from "langchain-gpt4all/tools";
+import { NodeFileStore } from "langchain-gpt4all/stores/file/node";
+import { HNSWLib } from "langchain-gpt4all/vectorstores/hnswlib";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
 
 const store = new NodeFileStore();
 

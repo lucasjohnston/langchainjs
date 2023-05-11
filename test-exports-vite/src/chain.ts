@@ -1,11 +1,11 @@
 // Import a few things we'll use to test the exports
-import { LLMChain } from "langchain/chains";
-import { ChatOpenAI } from "langchain/chat_models/openai";
+import { LLMChain } from "langchain-gpt4all/chains";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
-} from "langchain/prompts";
-import { CallbackManager } from "langchain/callbacks";
+} from "langchain-gpt4all/prompts";
+import { CallbackManager } from "langchain-gpt4all/callbacks";
 
 export function setupChain(element: HTMLButtonElement) {
   const runChain = async () => {

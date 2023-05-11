@@ -26,7 +26,7 @@ npm install playwright
 ## Usage
 
 ```typescript
-import { PlaywrightWebBaseLoader } from "langchain/document_loaders/web/playwright";
+import { PlaywrightWebBaseLoader } from "langchain-gpt4all/document_loaders/web/playwright";
 
 /**
  * Loader uses `page.content()`
@@ -60,7 +60,7 @@ By passing these options to the `PlaywrightWebBaseLoader` constructor, you can c
 Here is a basic example to do it:
 
 ```typescript
-import { PlaywrightWebBaseLoader } from "langchain/document_loaders/web/playwright";
+import { PlaywrightWebBaseLoader } from "langchain-gpt4all/document_loaders/web/playwright";
 
 const loader = new PlaywrightWebBaseLoader("https://www.tabnews.com.br/", {
   launchOptions: {

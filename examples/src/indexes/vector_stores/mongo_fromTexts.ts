@@ -1,11 +1,11 @@
-import { MongoVectorStore } from "langchain/vectorstores/mongo";
-import { CohereEmbeddings } from "langchain/embeddings/cohere";
+import { MongoVectorStore } from "langchain-gpt4all/vectorstores/mongo";
+import { CohereEmbeddings } from "langchain-gpt4all/embeddings/cohere";
 import { MongoClient } from "mongodb";
 
 export const run = async () => {
   const client = new MongoClient(process.env.MONGO_URI || "");
 
-  const collection = client.db("langchain").collection("test");
+  const collection = client.db("langchain-gpt4all").collection("test");
 
   await MongoVectorStore.fromTexts(
     ["Hello world", "Bye bye", "What's this?"],

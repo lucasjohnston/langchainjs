@@ -1,6 +1,6 @@
-import { OpenAI } from "langchain/llms/openai";
-import { RegexParser } from "langchain/output_parsers";
-import { PromptTemplate } from "langchain/prompts";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { RegexParser } from "langchain-gpt4all/output_parsers";
+import { PromptTemplate } from "langchain-gpt4all/prompts";
 
 export const run = async () => {
   const parser = new RegexParser(

@@ -1,11 +1,11 @@
-version: '3'
+version: "3"
 services:
   test-exports-esbuild:
     image: node:18
     working_dir: /app
     volumes:
       - ./test-exports-esbuild:/package
-      - ./langchain:/langchain
+      - ./langchain-gpt4all:/langchain-gpt4all
       - ./scripts:/scripts
     command: bash /scripts/docker-ci-entrypoint.sh
   test-exports-esm:
@@ -13,7 +13,7 @@ services:
     working_dir: /app
     volumes:
       - ./test-exports-esm:/package
-      - ./langchain:/langchain
+      - ./langchain-gpt4all:/langchain-gpt4all
       - ./scripts:/scripts
     command: bash /scripts/docker-ci-entrypoint.sh
   test-exports-cjs:
@@ -21,7 +21,7 @@ services:
     working_dir: /app
     volumes:
       - ./test-exports-cjs:/package
-      - ./langchain:/langchain
+      - ./langchain-gpt4all:/langchain-gpt4all
       - ./scripts:/scripts
     command: bash /scripts/docker-ci-entrypoint.sh
   test-exports-cra:
@@ -29,7 +29,7 @@ services:
     working_dir: /app
     volumes:
       - ./test-exports-cra:/package
-      - ./langchain:/langchain
+      - ./langchain-gpt4all:/langchain-gpt4all
       - ./scripts:/scripts
     command: bash /scripts/docker-ci-entrypoint.sh
   test-exports-cf:
@@ -37,7 +37,7 @@ services:
     working_dir: /app
     volumes:
       - ./test-exports-cf:/package
-      - ./langchain:/langchain
+      - ./langchain-gpt4all:/langchain-gpt4all
       - ./scripts:/scripts
     command: bash /scripts/docker-ci-entrypoint.sh
   test-exports-vercel:
@@ -45,7 +45,7 @@ services:
     working_dir: /app
     volumes:
       - ./test-exports-vercel:/package
-      - ./langchain:/langchain
+      - ./langchain-gpt4all:/langchain-gpt4all
       - ./scripts:/scripts
     command: bash /scripts/docker-ci-entrypoint.sh
   test-exports-vite:
@@ -53,7 +53,7 @@ services:
     working_dir: /app
     volumes:
       - ./test-exports-vite:/package
-      - ./langchain:/langchain
+      - ./langchain-gpt4all:/langchain-gpt4all
       - ./scripts:/scripts
     command: bash /scripts/docker-ci-entrypoint.sh
   success:

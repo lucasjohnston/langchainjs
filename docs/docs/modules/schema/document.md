@@ -16,7 +16,7 @@ interface Document {
 You can create a document object rather easily in LangChain with:
 
 ```typescript
-import { Document } from "langchain/document";
+import { Document } from "langchain-gpt4all/document";
 
 const doc = new Document({ pageContent: "foo" });
 ```
@@ -24,7 +24,7 @@ const doc = new Document({ pageContent: "foo" });
 You can create one with metadata with:
 
 ```typescript
-import { Document } from "langchain/document";
+import { Document } from "langchain-gpt4all/document";
 
 const doc = new Document({ pageContent: "foo", metadata: { source: "1" } });
 ```

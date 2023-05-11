@@ -1,5 +1,5 @@
-import { ChatOpenAI } from "langchain/chat_models/openai";
-import { HumanChatMessage, SystemChatMessage } from "langchain/schema";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
+import { HumanChatMessage, SystemChatMessage } from "langchain-gpt4all/schema";
 
 export const run = async () => {
   const chat = new ChatOpenAI({ modelName: "gpt-3.5-turbo" });

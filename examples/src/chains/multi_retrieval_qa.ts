@@ -1,7 +1,7 @@
-import { MultiRetrievalQAChain } from "langchain/chains";
-import { OpenAIChat } from "langchain/llms/openai";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
+import { MultiRetrievalQAChain } from "langchain-gpt4all/chains";
+import { OpenAIChat } from "langchain-gpt4all/llms/openai";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { MemoryVectorStore } from "langchain-gpt4all/vectorstores/memory";
 
 export const run = async () => {
   const embeddings = new OpenAIEmbeddings();

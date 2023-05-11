@@ -1,8 +1,8 @@
-import { OpenAI } from "langchain/llms/openai";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import { HydeRetriever } from "langchain/retrievers/hyde";
-import { Document } from "langchain/document";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { MemoryVectorStore } from "langchain-gpt4all/vectorstores/memory";
+import { HydeRetriever } from "langchain-gpt4all/retrievers/hyde";
+import { Document } from "langchain-gpt4all/document";
 
 const embeddings = new OpenAIEmbeddings();
 const vectorStore = new MemoryVectorStore(embeddings);

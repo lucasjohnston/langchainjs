@@ -1,9 +1,9 @@
-import { OpenAI } from "langchain/llms/openai";
-import { initializeAgentExecutorWithOptions } from "langchain/agents";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { SerpAPI } from "langchain/tools";
-import { Calculator } from "langchain/tools/calculator";
-import { WebBrowser } from "langchain/tools/webbrowser";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { initializeAgentExecutorWithOptions } from "langchain-gpt4all/agents";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { SerpAPI } from "langchain-gpt4all/tools";
+import { Calculator } from "langchain-gpt4all/tools/calculator";
+import { WebBrowser } from "langchain-gpt4all/tools/webbrowser";
 
 export const run = async () => {
   const model = new OpenAI({ temperature: 0 });

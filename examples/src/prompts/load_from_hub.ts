@@ -1,4 +1,4 @@
-import { loadPrompt } from "langchain/prompts/load";
+import { loadPrompt } from "langchain-gpt4all/prompts/load";
 
 export const run = async () => {
   const prompt = await loadPrompt("lc://prompts/hello-world/prompt.yaml");

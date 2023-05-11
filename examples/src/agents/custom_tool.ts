@@ -1,6 +1,6 @@
-import { OpenAI } from "langchain/llms/openai";
-import { initializeAgentExecutorWithOptions } from "langchain/agents";
-import { DynamicTool } from "langchain/tools";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { initializeAgentExecutorWithOptions } from "langchain-gpt4all/agents";
+import { DynamicTool } from "langchain-gpt4all/tools";
 
 export const run = async () => {
   const model = new OpenAI({ temperature: 0 });

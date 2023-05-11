@@ -1,6 +1,6 @@
-import { WebBrowser } from "langchain/tools/webbrowser";
-import { ChatOpenAI } from "langchain/chat_models/openai";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { WebBrowser } from "langchain-gpt4all/tools/webbrowser";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
 
 export async function run() {
   // this will not work with Azure OpenAI API yet

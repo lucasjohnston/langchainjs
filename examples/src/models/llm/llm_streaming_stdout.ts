@@ -1,4 +1,4 @@
-import { OpenAI } from "langchain/llms/openai";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
 
 // To enable streaming, we pass in `streaming: true` to the LLM constructor.
 // Additionally, we pass in a handler for the `handleLLMNewToken` event.

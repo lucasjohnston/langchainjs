@@ -11,7 +11,7 @@ Only available on Node.js.
 Langchain.js accepts [@pinecone-database/pinecone](https://docs.pinecone.io/docs/node-client) as the client for Pinecone vectorstore. Install the library with
 
 ```bash npm2yarn
-npm install -S dotenv langchain @pinecone-database/pinecone
+npm install -S dotenv langchain-gpt4all @pinecone-database/pinecone
 ```
 
 ## Index docs
@@ -19,9 +19,9 @@ npm install -S dotenv langchain @pinecone-database/pinecone
 ```typescript
 import { PineconeClient } from "@pinecone-database/pinecone";
 import * as dotenv from "dotenv";
-import { Document } from "langchain/document";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { PineconeStore } from "langchain/vectorstores/pinecone";
+import { Document } from "langchain-gpt4all/document";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { PineconeStore } from "langchain-gpt4all/vectorstores/pinecone";
 
 dotenv.config();
 
@@ -61,10 +61,10 @@ await PineconeStore.fromDocuments(docs, new OpenAIEmbeddings(), {
 ```typescript
 import { PineconeClient } from "@pinecone-database/pinecone";
 import * as dotenv from "dotenv";
-import { VectorDBQAChain } from "langchain/chains";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { OpenAI } from "langchain/llms/openai";
-import { PineconeStore } from "langchain/vectorstores/pinecone";
+import { VectorDBQAChain } from "langchain-gpt4all/chains";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { PineconeStore } from "langchain-gpt4all/vectorstores/pinecone";
 
 dotenv.config();
 

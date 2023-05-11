@@ -26,4 +26,4 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
       - run: yarn run ci
-      - run: yarn workspace langchain run test:integration
+      - run: yarn workspace langchain-gpt4all run test:integration

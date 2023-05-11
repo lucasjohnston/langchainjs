@@ -13,7 +13,7 @@ Databerry is an [open source](https://github.com/gmpetrov/databerry) document re
 Retrieving documents stored in Databerry from LangChain is very easy!
 
 ```typescript
-import { DataberryRetriever } from "langchain/retrievers/databerry";
+import { DataberryRetriever } from "langchain-gpt4all/retrievers/databerry";
 
 const retriever = new DataberryRetriever({
   datastoreUrl: "https://api.databerry.ai/query/clg1xg2h80000l708dymr0fxc",

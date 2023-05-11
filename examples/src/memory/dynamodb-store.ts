@@ -1,11 +1,11 @@
-import { BufferMemory } from "langchain/memory";
-import { DynamoDBChatMessageHistory } from "langchain/stores/message/dynamodb";
-import { ChatOpenAI } from "langchain/chat_models/openai";
-import { ConversationChain } from "langchain/chains";
+import { BufferMemory } from "langchain-gpt4all/memory";
+import { DynamoDBChatMessageHistory } from "langchain-gpt4all/stores/message/dynamodb";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
+import { ConversationChain } from "langchain-gpt4all/chains";
 
 const memory = new BufferMemory({
   chatHistory: new DynamoDBChatMessageHistory({
-    tableName: "langchain",
+    tableName: "langchain-gpt4all",
     partitionKey: "id",
     sessionId: new Date().toISOString(), // Or some other unique identifier for the conversation
     config: {

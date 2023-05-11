@@ -1,9 +1,9 @@
-import { AutoGPT } from "langchain/experimental/autogpt";
-import { ReadFileTool, WriteFileTool, SerpAPI } from "langchain/tools";
-import { InMemoryFileStore } from "langchain/stores/file/in_memory";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { ChatOpenAI } from "langchain/chat_models/openai";
+import { AutoGPT } from "langchain-gpt4all/experimental/autogpt";
+import { ReadFileTool, WriteFileTool, SerpAPI } from "langchain-gpt4all/tools";
+import { InMemoryFileStore } from "langchain-gpt4all/stores/file/in_memory";
+import { MemoryVectorStore } from "langchain-gpt4all/vectorstores/memory";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
 
 const store = new InMemoryFileStore();
 

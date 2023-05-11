@@ -1,8 +1,8 @@
-import { BasePromptTemplate, PromptTemplate } from "langchain/prompts";
-import { BaseLanguageModel } from "langchain/base_language";
-import { CallbackManagerForChainRun } from "langchain/callbacks";
-import { BaseChain, ChainInputs } from "langchain/chains";
-import { ChainValues } from "langchain/schema";
+import { BasePromptTemplate, PromptTemplate } from "langchain-gpt4all/prompts";
+import { BaseLanguageModel } from "langchain-gpt4all/base_language";
+import { CallbackManagerForChainRun } from "langchain-gpt4all/callbacks";
+import { BaseChain, ChainInputs } from "langchain-gpt4all/chains";
+import { ChainValues } from "langchain-gpt4all/schema";
 
 export interface MyCustomChainInputs extends ChainInputs {
   llm: BaseLanguageModel;

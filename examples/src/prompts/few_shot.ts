@@ -1,4 +1,7 @@
-import { FewShotPromptTemplate, PromptTemplate } from "langchain/prompts";
+import {
+  FewShotPromptTemplate,
+  PromptTemplate,
+} from "langchain-gpt4all/prompts";
 
 export const run = async () => {
   // First, create a list of few-shot examples.

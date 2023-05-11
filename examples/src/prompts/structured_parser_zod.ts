@@ -1,7 +1,7 @@
 import { z } from "zod";
-import { OpenAI } from "langchain/llms/openai";
-import { PromptTemplate } from "langchain/prompts";
-import { StructuredOutputParser } from "langchain/output_parsers";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { PromptTemplate } from "langchain-gpt4all/prompts";
+import { StructuredOutputParser } from "langchain-gpt4all/output_parsers";
 
 // We can use zod to define a schema for the output using the `fromZodSchema` method of `StructuredOutputParser`.
 const parser = StructuredOutputParser.fromZodSchema(

@@ -12,8 +12,8 @@ To contribute to this project, please follow a ["fork and pull request"](https:/
 
 If you are not sure what to work on, we have a few suggestions:
 
-- Look at the issues with the [help wanted](https://github.com/hwchase17/langchainjs/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) label. These are issues that we think are good targets for new contributors. If you are interested in working on one of these, please comment on the issue so that we can assign it to you. And any questions let us know, we're happy to guide you!
-- At the moment our main focus is reaching parity with the Python version across both [integrations](https://langchain.com/integrations.html) and [features](https://langchain.com/features.html). If you are interested in working on a specific integration or feature, just pick anything from those lists not done yet, please let us know and we can help you get started.
+- Look at the issues with the [help wanted](https://github.com/lucasjohnston/langchainjs-gpt4all/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) label. These are issues that we think are good targets for new contributors. If you are interested in working on one of these, please comment on the issue so that we can assign it to you. And any questions let us know, we're happy to guide you!
+- At the moment our main focus is reaching parity with the Python version across both [integrations](https://langchain-gpt4all.com/integrations.html) and [features](https://langchain-gpt4all.com/features.html). If you are interested in working on a specific integration or feature, just pick anything from those lists not done yet, please let us know and we can help you get started.
 
 ### New abstractions
 
@@ -23,7 +23,7 @@ We are currently trying to keep API parity between the Python and JS versions of
 
 ### 🚩GitHub Issues
 
-Our [issues](https://github.com/hwchase17/langchainjs/issues) page is kept up to date
+Our [issues](https://github.com/lucasjohnston/langchainjs-gpt4all/issues) page is kept up to date
 with bugs, improvements, and feature requests. There is a taxonomy of labels to help
 with sorting and discovery of issues of interest. These include:
 
@@ -61,7 +61,7 @@ good code into the codebase.
 > TODO:
 
 As of now, LangChain has an ad hoc release process: releases are cut with high frequency via by
-a developer and published to [npm](https://www.npmjs.com/package/langchain).
+a developer and published to [npm](https://www.npmjs.com/package/langchain-gpt4all).
 
 LangChain follows the [semver](https://semver.org/) versioning standard. However, as pre-1.0 software,
 even patch releases may contain [non-backwards-compatible changes](https://semver.org/#spec-item-4).
@@ -194,13 +194,13 @@ level of the repo.
 LangChain exposes multiple subpaths the user can import from, e.g.
 
 ```ts
-import { OpenAI } from "langchain/llms/openai";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
 ```
 
 We call these subpaths "entrypoints". In general, you should create a new entrypoint if you are adding a new integration with a 3rd party library. If you're adding self-contained functionality without any external dependencies, you can add it to an existing entrypoint.
 
 In order to declare a new entrypoint that users can import from, you
-should edit the `langchain/scripts/create-entrypoints.js` script. To add an
+should edit the `langchain-gpt4all/scripts/create-entrypoints.js` script. To add an
 entrypoint `tools` that imports from `tools/index.ts` you'd add
 the following to the `entrypoints` variable:
 

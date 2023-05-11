@@ -1,10 +1,10 @@
-import { LLMChain } from "langchain/chains";
-import { ChatOpenAI } from "langchain/chat_models/openai";
+import { LLMChain } from "langchain-gpt4all/chains";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   SystemMessagePromptTemplate,
-} from "langchain/prompts";
+} from "langchain-gpt4all/prompts";
 
 export const run = async () => {
   const chat = new ChatOpenAI({ temperature: 0 });

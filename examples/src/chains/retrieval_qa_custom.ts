@@ -1,8 +1,8 @@
-import { OpenAI } from "langchain/llms/openai";
-import { RetrievalQAChain, loadQARefineChain } from "langchain/chains";
-import { HNSWLib } from "langchain/vectorstores/hnswlib";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { RetrievalQAChain, loadQARefineChain } from "langchain-gpt4all/chains";
+import { HNSWLib } from "langchain-gpt4all/vectorstores/hnswlib";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { RecursiveCharacterTextSplitter } from "langchain-gpt4all/text_splitter";
 import * as fs from "fs";
 
 // Initialize the LLM to use to answer the question.

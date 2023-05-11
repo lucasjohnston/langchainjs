@@ -43,8 +43,8 @@ Only available on Node.js.
 ## Index and query docs
 
 ```typescript
-import { Milvus } from "langchain/vectorstores/milvus";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { Milvus } from "langchain-gpt4all/vectorstores/milvus";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
 
 // text sample from Godel, Escher, Bach
 const vectorStore = await Milvus.fromTexts(
@@ -78,8 +78,8 @@ const response = await vectorStore.similaritySearch("scared", 2);
 ## Query docs from existing collection
 
 ```typescript
-import { Milvus } from "langchain/vectorstores/milvus";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { Milvus } from "langchain-gpt4all/vectorstores/milvus";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
 
 const vectorStore = await Milvus.fromExistingCollection(
   new OpenAIEmbeddings(),

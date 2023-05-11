@@ -8,7 +8,7 @@ import DocCardList from "@theme/DocCardList";
 # Tools
 
 :::info
-[Conceptual Guide](https://docs.langchain.com/docs/components/agents/tool)
+[Conceptual Guide](https://docs.langchain-gpt4all.com/docs/components/agents/tool)
 :::
 
 A tool is an abstraction around a function that makes it easy for a language model to interact with it. Specifically, the interface of a tool has a single text input and a single text output. It includes a name and description that communicate to the [Model](../../models/) what the tool does and when to use it.
@@ -47,9 +47,9 @@ The `DynamicTool` class takes as input a name, a description, and a function. Im
 See below for an example of defining and using `DynamicTool`s.
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
-import { initializeAgentExecutorWithOptions } from "langchain/agents";
-import { DynamicTool } from "langchain/tools";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { initializeAgentExecutorWithOptions } from "langchain-gpt4all/agents";
+import { DynamicTool } from "langchain-gpt4all/tools";
 
 export const run = async () => {
   const model = new OpenAI({ temperature: 0 });

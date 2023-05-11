@@ -1,10 +1,10 @@
-import { OpenAI } from "langchain/llms/openai";
-import { ChatOpenAI } from "langchain/chat_models/openai";
-import { SystemChatMessage, HumanChatMessage } from "langchain/schema";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
+import { SystemChatMessage, HumanChatMessage } from "langchain-gpt4all/schema";
 import * as process from "process";
 
 export const run = async () => {
-  process.env.LANGCHAIN_HANDLER = "langchain";
+  process.env.LANGCHAIN_HANDLER = "langchain-gpt4all";
   const model = new OpenAI({ temperature: 0.9 });
   const resA = await model.call(
     "What would be a good company name a company that makes colorful socks?"

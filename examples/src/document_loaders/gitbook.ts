@@ -1,4 +1,4 @@
-import { GitbookLoader } from "langchain/document_loaders/web/gitbook";
+import { GitbookLoader } from "langchain-gpt4all/document_loaders/web/gitbook";
 
 export const run = async () => {
   const loader = new GitbookLoader("https://docs.gitbook.com");

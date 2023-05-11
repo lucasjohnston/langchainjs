@@ -1,7 +1,7 @@
-import { ChatOpenAI } from "langchain/chat_models/openai";
-import { ConversationSummaryMemory } from "langchain/memory";
-import { LLMChain } from "langchain/chains";
-import { PromptTemplate } from "langchain/prompts";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
+import { ConversationSummaryMemory } from "langchain-gpt4all/memory";
+import { LLMChain } from "langchain-gpt4all/chains";
+import { PromptTemplate } from "langchain-gpt4all/prompts";
 
 export const run = async () => {
   const memory = new ConversationSummaryMemory({

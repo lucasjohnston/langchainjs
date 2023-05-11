@@ -1,5 +1,5 @@
-import { Document } from "langchain/document";
-import { CharacterTextSplitter } from "langchain/text_splitter";
+import { Document } from "langchain-gpt4all/document";
+import { CharacterTextSplitter } from "langchain-gpt4all/text_splitter";
 
 export const run = async () => {
   /* Split text */

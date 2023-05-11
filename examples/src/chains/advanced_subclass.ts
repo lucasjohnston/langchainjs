@@ -1,7 +1,7 @@
-import { CallbackManagerForChainRun } from "langchain/callbacks";
-import { BaseChain as _ } from "langchain/chains";
-import { BaseMemory } from "langchain/memory";
-import { ChainValues } from "langchain/schema";
+import { CallbackManagerForChainRun } from "langchain-gpt4all/callbacks";
+import { BaseChain as _ } from "langchain-gpt4all/chains";
+import { BaseMemory } from "langchain-gpt4all/memory";
+import { ChainValues } from "langchain-gpt4all/schema";
 
 abstract class BaseChain {
   memory?: BaseMemory;

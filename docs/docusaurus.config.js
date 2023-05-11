@@ -17,7 +17,7 @@ const config = {
     mendableAnonKey: process.env.MENDABLE_ANON_KEY,
   },
   // Set the production url of your site here
-  url: "https://js.langchain.com",
+  url: "https://js.langchain-gpt4all.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -29,7 +29,7 @@ const config = {
     [
       "docusaurus-plugin-typedoc",
       {
-        tsconfig: "../langchain/tsconfig.json",
+        tsconfig: "../langchain-gpt4all/tsconfig.json",
       },
     ],
     () => ({
@@ -74,7 +74,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/hwchase17/langchainjs/edit/main/docs/",
+          editUrl:
+            "https://github.com/lucasjohnston/langchainjs-gpt4all/edit/main/docs/",
           remarkPlugins: [
             [require("@docusaurus/remark-plugin-npm2yarn"), { sync: true }],
           ],
@@ -120,12 +121,12 @@ const config = {
         title: "🦜️🔗 LangChain",
         items: [
           {
-            href: "https://docs.langchain.com/docs/",
+            href: "https://docs.langchain-gpt4all.com/docs/",
             label: "Concepts",
             position: "left",
           },
           {
-            href: "https://python.langchain.com/en/latest/",
+            href: "https://python.langchain-gpt4all.com/en/latest/",
             label: "Python Docs",
             position: "left",
           },
@@ -136,7 +137,7 @@ const config = {
           },
           // Please keep GitHub link to the right for consistency.
           {
-            href: "https://github.com/hwchase17/langchainjs",
+            href: "https://github.com/lucasjohnston/langchainjs-gpt4all",
             label: "GitHub",
             position: "right",
           },
@@ -163,11 +164,11 @@ const config = {
             items: [
               {
                 label: "Python",
-                href: "https://github.com/hwchase17/langchain",
+                href: "https://github.com/hwchase17/langchain-gpt4all",
               },
               {
                 label: "JS/TS",
-                href: "https://github.com/hwchase17/langchainjs",
+                href: "https://github.com/lucasjohnston/langchainjs-gpt4all",
               },
             ],
           },
@@ -176,11 +177,11 @@ const config = {
             items: [
               {
                 label: "Homepage",
-                href: "https://langchain.com",
+                href: "https://langchain-gpt4all.com",
               },
               {
                 label: "Blog",
-                href: "https://blog.langchain.dev",
+                href: "https://blog.langchain-gpt4all.dev",
               },
             ],
           },

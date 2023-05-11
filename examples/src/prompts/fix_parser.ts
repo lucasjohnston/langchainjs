@@ -1,9 +1,9 @@
 import { z } from "zod";
-import { ChatOpenAI } from "langchain/chat_models/openai";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
 import {
   StructuredOutputParser,
   OutputFixingParser,
-} from "langchain/output_parsers";
+} from "langchain-gpt4all/output_parsers";
 
 export const run = async () => {
   const parser = StructuredOutputParser.fromZodSchema(
@@ -42,9 +42,9 @@ export const run = async () => {
         "message": "Expected array, received string"
       }
     ]
-    at StructuredOutputParser.parse (/Users/ankushgola/Code/langchainjs/langchain/src/output_parsers/structured.ts:71:13)
-    at run (/Users/ankushgola/Code/langchainjs/examples/src/prompts/fix_parser.ts:25:18)
-    at <anonymous> (/Users/ankushgola/Code/langchainjs/examples/src/index.ts:33:22)
+    at StructuredOutputParser.parse (/Users/ankushgola/Code/langchainjs-gpt4all/langchain-gpt4all/src/output_parsers/structured.ts:71:13)
+    at run (/Users/ankushgola/Code/langchainjs-gpt4all/examples/src/prompts/fix_parser.ts:25:18)
+    at <anonymous> (/Users/ankushgola/Code/langchainjs-gpt4all/examples/src/index.ts:33:22)
    */
   }
   const fixParser = OutputFixingParser.fromLLM(

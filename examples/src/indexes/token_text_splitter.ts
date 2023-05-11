@@ -1,5 +1,5 @@
-import { Document } from "langchain/document";
-import { TokenTextSplitter } from "langchain/text_splitter";
+import { Document } from "langchain-gpt4all/document";
+import { TokenTextSplitter } from "langchain-gpt4all/text_splitter";
 import fs from "fs";
 import path from "path";
 

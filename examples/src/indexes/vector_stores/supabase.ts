@@ -1,9 +1,9 @@
-import { SupabaseVectorStore } from "langchain/vectorstores/supabase";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { SupabaseVectorStore } from "langchain-gpt4all/vectorstores/supabase";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
 import { createClient } from "@supabase/supabase-js";
 
 // First, follow set-up instructions at
-// https://js.langchain.com/docs/modules/indexes/vector_stores/integrations/supabase
+// https://js.langchain-gpt4all.com/docs/modules/indexes/vector_stores/integrations/supabase
 
 const privateKey = process.env.SUPABASE_PRIVATE_KEY;
 if (!privateKey) throw new Error(`Expected env var SUPABASE_PRIVATE_KEY`);

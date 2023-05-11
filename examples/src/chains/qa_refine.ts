@@ -1,8 +1,8 @@
-import { loadQARefineChain } from "langchain/chains";
-import { OpenAI } from "langchain/llms/openai";
-import { TextLoader } from "langchain/document_loaders/fs/text";
-import { MemoryVectorStore } from "langchain/vectorstores/memory";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { loadQARefineChain } from "langchain-gpt4all/chains";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { TextLoader } from "langchain-gpt4all/document_loaders/fs/text";
+import { MemoryVectorStore } from "langchain-gpt4all/vectorstores/memory";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
 
 export async function run() {
   // Create the models and chain

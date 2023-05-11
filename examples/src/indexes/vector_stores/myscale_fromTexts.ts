@@ -1,5 +1,5 @@
-import { MyScaleStore } from "langchain/vectorstores/myscale";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { MyScaleStore } from "langchain-gpt4all/vectorstores/myscale";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
 
 const vectorStore = await MyScaleStore.fromTexts(
   ["Hello world", "Bye bye", "hello nice world"],

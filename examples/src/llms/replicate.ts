@@ -1,4 +1,4 @@
-import { Replicate } from "langchain/llms/replicate";
+import { Replicate } from "langchain-gpt4all/llms/replicate";
 
 export const run = async () => {
   const model = new Replicate({

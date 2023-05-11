@@ -1,5 +1,5 @@
-import { LLMResult } from "langchain/schema";
-import { OpenAI } from "langchain/llms/openai";
+import { LLMResult } from "langchain-gpt4all/schema";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
 
 export const run = async () => {
   // We can pass in a list of CallbackHandlers to the LLM constructor to get callbacks for various events.

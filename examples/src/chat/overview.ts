@@ -1,15 +1,15 @@
-import { AgentExecutor, ChatAgent } from "langchain/agents";
-import { ConversationChain, LLMChain } from "langchain/chains";
-import { ChatOpenAI } from "langchain/chat_models/openai";
-import { BufferMemory } from "langchain/memory";
+import { AgentExecutor, ChatAgent } from "langchain-gpt4all/agents";
+import { ConversationChain, LLMChain } from "langchain-gpt4all/chains";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
+import { BufferMemory } from "langchain-gpt4all/memory";
 import {
   ChatPromptTemplate,
   HumanMessagePromptTemplate,
   MessagesPlaceholder,
   SystemMessagePromptTemplate,
-} from "langchain/prompts";
-import { HumanChatMessage, SystemChatMessage } from "langchain/schema";
-import { SerpAPI } from "langchain/tools";
+} from "langchain-gpt4all/prompts";
+import { HumanChatMessage, SystemChatMessage } from "langchain-gpt4all/schema";
+import { SerpAPI } from "langchain-gpt4all/tools";
 
 export const run = async () => {
   const chat = new ChatOpenAI({ temperature: 0 });

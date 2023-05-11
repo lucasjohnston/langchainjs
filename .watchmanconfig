@@ -1,10 +1,10 @@
 {
   "ignore_dirs": [
-    "langchain/dist",
-    "langchain/dist-cjs",
+    "langchain-gpt4all/dist",
+    "langchain-gpt4all/dist-cjs",
     "docs/build",
     "node_modules",
-    "langchain/.turbo",
+    "langchain-gpt4all/.turbo",
     "docs/.turbo",
     "test-exports/.turbo",
     "test-exports-cjs/.turbo"

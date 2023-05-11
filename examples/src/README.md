@@ -1,4 +1,4 @@
-# langchain-examples
+# langchain-gpt4all-examples
 
 This folder contains examples of how to use LangChain.
 
@@ -6,7 +6,7 @@ This folder contains examples of how to use LangChain.
 
 What you'll usually want to do.
 
-First, build langchain. From the repository root, run:
+First, build langchain-gpt4all. From the repository root, run:
 
 ```sh
 yarn

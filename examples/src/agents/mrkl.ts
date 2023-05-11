@@ -1,7 +1,7 @@
-import { initializeAgentExecutorWithOptions } from "langchain/agents";
-import { OpenAI } from "langchain/llms/openai";
-import { SerpAPI } from "langchain/tools";
-import { Calculator } from "langchain/tools/calculator";
+import { initializeAgentExecutorWithOptions } from "langchain-gpt4all/agents";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { SerpAPI } from "langchain-gpt4all/tools";
+import { Calculator } from "langchain-gpt4all/tools/calculator";
 
 const model = new OpenAI({ temperature: 0 });
 const tools = [

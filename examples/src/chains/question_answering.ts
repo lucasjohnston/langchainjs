@@ -1,6 +1,9 @@
-import { OpenAI } from "langchain/llms/openai";
-import { loadQAStuffChain, loadQAMapReduceChain } from "langchain/chains";
-import { Document } from "langchain/document";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import {
+  loadQAStuffChain,
+  loadQAMapReduceChain,
+} from "langchain-gpt4all/chains";
+import { Document } from "langchain-gpt4all/document";
 
 export const run = async () => {
   // This first example uses the `StuffDocumentsChain`.

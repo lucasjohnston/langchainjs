@@ -1,5 +1,5 @@
-import { ChatOpenAI } from "langchain/chat_models/openai";
-import { HumanChatMessage } from "langchain/schema";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
+import { HumanChatMessage } from "langchain-gpt4all/schema";
 
 const chat = new ChatOpenAI({
   maxTokens: 25,

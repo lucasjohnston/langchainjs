@@ -1,4 +1,4 @@
-import { UnstructuredLoader } from "langchain/document_loaders/fs/unstructured";
+import { UnstructuredLoader } from "langchain-gpt4all/document_loaders/fs/unstructured";
 
 const options = {
   apiKey: "MY_API_KEY",

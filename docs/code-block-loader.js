@@ -31,7 +31,7 @@ async function webpackLoader(content, map, meta) {
       if (node.type === "ImportDeclaration") {
         const source = node.source.value;
 
-        if (!source.startsWith("langchain")) {
+        if (!source.startsWith("langchain-gpt4all")) {
           return;
         }
 

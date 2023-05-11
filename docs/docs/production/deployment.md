@@ -32,4 +32,4 @@ See below for a list of deployment options for your LangChain app. If you don't 
 
 [Fly.io](https://fly.io) is a platform for deploying apps to the cloud. It's a great option for deploying your app to a container environment.
 
-See [our Fly.io template](https://github.com/hwchase17/langchain-template-node-fly) for an example of how to deploy your app to Fly.io.
+See [our Fly.io template](https://github.com/hwchase17/langchain-gpt4all-template-node-fly) for an example of how to deploy your app to Fly.io.

@@ -51,7 +51,7 @@ These including:
 
 Additional collection of resources we think may be useful as you develop your application!
 
-- [LangChainHub](https://github.com/hwchase17/langchain-hub): The LangChainHub is a place to share and explore other prompts, chains, and agents.
+- [LangChainHub](https://github.com/hwchase17/langchain-gpt4all-hub): The LangChainHub is a place to share and explore other prompts, chains, and agents.
 
 - [Discord](https://discord.gg/6adMQxSpJS): Join us on our Discord to discuss all things LangChain!
 

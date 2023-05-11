@@ -7,7 +7,7 @@ export CI=true
 cp -r ../package/* .
 
 # Replace the workspace dependency with the local copy, and install all others
-yarn add ../langchain
+yarn add ../langchain-gpt4all
 
 # Check the build command completes successfully
 yarn build

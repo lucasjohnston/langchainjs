@@ -1,5 +1,8 @@
-import { OpenAI } from "langchain/llms/openai";
-import { loadSummarizationChain, AnalyzeDocumentChain } from "langchain/chains";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import {
+  loadSummarizationChain,
+  AnalyzeDocumentChain,
+} from "langchain-gpt4all/chains";
 import * as fs from "fs";
 
 export const run = async () => {

@@ -108,6 +108,6 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
       - name: Build
-        run: yarn workspace langchain build
+        run: yarn workspace langchain-gpt4all build
       - name: Test Exports
         run: yarn run test:exports:docker

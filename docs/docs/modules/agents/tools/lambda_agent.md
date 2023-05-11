@@ -21,10 +21,10 @@ This quick start will demonstrate how an Agent could use a Lambda function to se
 - The IAM role corresponding to those credentials must have permission to invoke the lambda function.
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
-import { SerpAPI } from "langchain/tools";
-import { AWSLambda } from "langchain/tools/aws_lambda";
-import { initializeAgentExecutorWithOptions } from "langchain/agents";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { SerpAPI } from "langchain-gpt4all/tools";
+import { AWSLambda } from "langchain-gpt4all/tools/aws_lambda";
+import { initializeAgentExecutorWithOptions } from "langchain-gpt4all/agents";
 
 const model = new OpenAI({ temperature: 0 });
 const emailSenderTool = new AWSLambda({

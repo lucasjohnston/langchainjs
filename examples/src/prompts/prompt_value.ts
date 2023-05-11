@@ -3,7 +3,7 @@ import {
   HumanMessagePromptTemplate,
   PromptTemplate,
   SystemMessagePromptTemplate,
-} from "langchain/prompts";
+} from "langchain-gpt4all/prompts";
 
 export const run = async () => {
   const template = "What is a good name for a company that makes {product}?";

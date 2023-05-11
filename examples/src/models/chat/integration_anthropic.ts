@@ -1,4 +1,4 @@
-import { ChatAnthropic } from "langchain/chat_models/anthropic";
+import { ChatAnthropic } from "langchain-gpt4all/chat_models/anthropic";
 
 const model = new ChatAnthropic({
   temperature: 0.9,

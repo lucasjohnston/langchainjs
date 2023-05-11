@@ -7,8 +7,8 @@ hide_table_of_contents: true
 Besides the `RecursiveCharacterTextSplitter`, there is also the more standard `CharacterTextSplitter`. This splits only on one type of character (defaults to `"\n\n"`). You can use it in the exact same way.
 
 ```typescript
-import { Document } from "langchain/document";
-import { CharacterTextSplitter } from "langchain/text_splitter";
+import { Document } from "langchain-gpt4all/document";
+import { CharacterTextSplitter } from "langchain-gpt4all/text_splitter";
 
 const text = "foo bar baz 123";
 const splitter = new CharacterTextSplitter({

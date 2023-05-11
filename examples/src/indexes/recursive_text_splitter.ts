@@ -1,4 +1,4 @@
-import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
+import { RecursiveCharacterTextSplitter } from "langchain-gpt4all/text_splitter";
 
 export const run = async () => {
   const text = `Hi.\n\nI'm Harrison.\n\nHow? Are? You?\nOkay then f f f f.

@@ -1,8 +1,8 @@
-import { OpenAI } from "langchain/llms/openai";
-import { ConversationalRetrievalQAChain } from "langchain/chains";
-import { Chroma } from "langchain/vectorstores/chroma";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { ConversationalRetrievalQAChain } from "langchain-gpt4all/chains";
+import { Chroma } from "langchain-gpt4all/vectorstores/chroma";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { RecursiveCharacterTextSplitter } from "langchain-gpt4all/text_splitter";
 import * as fs from "fs";
 
 // to run this first run chroma's docker-container with `docker-compose up -d --build`

@@ -10,7 +10,7 @@
     "test": "tsc"
   },
   "dependencies": {
-    "langchain": "workspace:*"
+    "langchain-gpt4all": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.0.0",

@@ -1,12 +1,12 @@
 import * as fs from "fs";
 
-import { OpenAI } from "langchain/llms/openai";
-import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
-import { RetrievalQAChain } from "langchain/chains";
-import { HNSWLib } from "langchain/vectorstores/hnswlib";
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { ContextualCompressionRetriever } from "langchain/retrievers/contextual_compression";
-import { LLMChainExtractor } from "langchain/retrievers/document_compressors/chain_extract";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { RecursiveCharacterTextSplitter } from "langchain-gpt4all/text_splitter";
+import { RetrievalQAChain } from "langchain-gpt4all/chains";
+import { HNSWLib } from "langchain-gpt4all/vectorstores/hnswlib";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
+import { ContextualCompressionRetriever } from "langchain-gpt4all/retrievers/contextual_compression";
+import { LLMChainExtractor } from "langchain-gpt4all/retrievers/document_compressors/chain_extract";
 
 const model = new OpenAI();
 const baseCompressor = LLMChainExtractor.fromLLM(model);

@@ -1,4 +1,4 @@
-import { IMSDBLoader } from "langchain/document_loaders/web/imsdb";
+import { IMSDBLoader } from "langchain-gpt4all/document_loaders/web/imsdb";
 
 export const run = async () => {
   const loader = new IMSDBLoader(

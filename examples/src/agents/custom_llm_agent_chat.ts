@@ -2,15 +2,15 @@ import {
   AgentActionOutputParser,
   AgentExecutor,
   LLMSingleActionAgent,
-} from "langchain/agents";
-import { LLMChain } from "langchain/chains";
-import { ChatOpenAI } from "langchain/chat_models/openai";
+} from "langchain-gpt4all/agents";
+import { LLMChain } from "langchain-gpt4all/chains";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
 import {
   BaseChatPromptTemplate,
   BasePromptTemplate,
   SerializedBasePromptTemplate,
   renderTemplate,
-} from "langchain/prompts";
+} from "langchain-gpt4all/prompts";
 import {
   AgentAction,
   AgentFinish,
@@ -19,9 +19,9 @@ import {
   HumanChatMessage,
   InputValues,
   PartialValues,
-} from "langchain/schema";
-import { SerpAPI, Tool } from "langchain/tools";
-import { Calculator } from "langchain/tools/calculator";
+} from "langchain-gpt4all/schema";
+import { SerpAPI, Tool } from "langchain-gpt4all/tools";
+import { Calculator } from "langchain-gpt4all/tools/calculator";
 
 const PREFIX = `Answer the following questions as best you can. You have access to the following tools:`;
 const formatInstructions = (

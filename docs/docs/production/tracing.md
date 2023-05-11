@@ -1,18 +1,18 @@
 # Tracing
 
-Similar to the Python `langchain` package, JS `langchain` also supports tracing.
+Similar to the Python `langchain-gpt4all` package, JS `langchain-gpt4all` also supports tracing.
 
-You can view an overview of tracing [here.](https://langchain.readthedocs.io/en/latest/tracing.html)
-To spin up the tracing backend, run `docker compose up` (or `docker-compose up` if on using an older version of `docker`) in the `langchain` directory.
-You can also use the `langchain-server` command if you have the python `langchain` package installed.
+You can view an overview of tracing [here.](https://langchain-gpt4all.readthedocs.io/en/latest/tracing.html)
+To spin up the tracing backend, run `docker compose up` (or `docker-compose up` if on using an older version of `docker`) in the `langchain-gpt4all` directory.
+You can also use the `langchain-gpt4all-server` command if you have the python `langchain-gpt4all` package installed.
 
-Here's an example of how to use tracing in `langchain.js`. All that needs to be done is setting the `LANGCHAIN_TRACING` environment variable to `true`.
+Here's an example of how to use tracing in `langchain-gpt4all.js`. All that needs to be done is setting the `LANGCHAIN_TRACING` environment variable to `true`.
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
-import { initializeAgentExecutorWithOptions } from "langchain/agents";
-import { SerpAPI } from "langchain/tools";
-import { Calculator } from "langchain/tools/calculator";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { initializeAgentExecutorWithOptions } from "langchain-gpt4all/agents";
+import { SerpAPI } from "langchain-gpt4all/tools";
+import { Calculator } from "langchain-gpt4all/tools/calculator";
 import process from "process";
 
 export const run = async () => {
@@ -48,10 +48,10 @@ export const run = async () => {
 Tracing works with concurrency out of the box.
 
 ```typescript
-import { OpenAI } from "langchain/llms/openai";
-import { initializeAgentExecutorWithOptions } from "langchain/agents";
-import { SerpAPI } from "langchain/tools";
-import { Calculator } from "langchain/tools/calculator";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { initializeAgentExecutorWithOptions } from "langchain-gpt4all/agents";
+import { SerpAPI } from "langchain-gpt4all/tools";
+import { Calculator } from "langchain-gpt4all/tools/calculator";
 import process from "process";
 
 export const run = async () => {

@@ -1,9 +1,9 @@
-import { LLMChain } from "langchain/chains";
-import { AgentExecutor, ZeroShotAgent } from "langchain/agents";
-import { BaseCallbackHandler } from "langchain/callbacks";
-import { ChatOpenAI } from "langchain/chat_models/openai";
-import { Calculator } from "langchain/tools/calculator";
-import { AgentAction } from "langchain/schema";
+import { LLMChain } from "langchain-gpt4all/chains";
+import { AgentExecutor, ZeroShotAgent } from "langchain-gpt4all/agents";
+import { BaseCallbackHandler } from "langchain-gpt4all/callbacks";
+import { ChatOpenAI } from "langchain-gpt4all/chat_models/openai";
+import { Calculator } from "langchain-gpt4all/tools/calculator";
+import { AgentAction } from "langchain-gpt4all/schema";
 
 export const run = async () => {
   // You can implement your own callback handler by extending BaseCallbackHandler

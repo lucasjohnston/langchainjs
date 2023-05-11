@@ -1,10 +1,10 @@
-import { OpenAIEmbeddings } from "langchain/embeddings/openai";
+import { OpenAIEmbeddings } from "langchain-gpt4all/embeddings/openai";
 import {
   SemanticSimilarityExampleSelector,
   PromptTemplate,
   FewShotPromptTemplate,
-} from "langchain/prompts";
-import { HNSWLib } from "langchain/vectorstores/hnswlib";
+} from "langchain-gpt4all/prompts";
+import { HNSWLib } from "langchain-gpt4all/vectorstores/hnswlib";
 
 export async function run() {
   // Create a prompt template that will be used to format the examples.

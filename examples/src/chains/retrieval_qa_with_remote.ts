@@ -1,6 +1,6 @@
-import { OpenAI } from "langchain/llms/openai";
-import { RetrievalQAChain } from "langchain/chains";
-import { RemoteLangChainRetriever } from "langchain/retrievers/remote";
+import { OpenAI } from "langchain-gpt4all/llms/openai";
+import { RetrievalQAChain } from "langchain-gpt4all/chains";
+import { RemoteLangChainRetriever } from "langchain-gpt4all/retrievers/remote";
 
 export const run = async () => {
   // Initialize the LLM to use to answer the question.

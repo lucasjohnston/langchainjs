@@ -1,4 +1,4 @@
-import { GPT4All } from "langchain/llms/gpt4all";
+import { GPT4All } from "langchain-gpt4all/llms/gpt4all";
 
 export const run = async () => {
   const model = new GPT4All({

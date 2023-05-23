@@ -32,7 +32,7 @@
     "test:unit": "turbo run test",
     "test:int": "turbo run test:integration",
     "test:exports:docker": "docker compose up",
-    "publish": "bash scripts/release-branch.sh && turbo run build lint test && yarn run test:exports:docker && yarn workspace langchain-gpt4all run release && echo '🔗 Open https://github.com/lucasjohnston/langchainjs-gpt4all/compare/release?expand=1 and merge the release PR'",
+    "publish": "bash scripts/release-branch.sh && turbo run build lint test && yarn run test:exports:docker && yarn workspace langchain-gpt4all run release && git add . && git commit",
     "example": "yarn workspace examples start",
     "prepare": "husky install",
     "precommit": "turbo run precommit",

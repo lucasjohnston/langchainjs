@@ -15049,14 +15049,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gpt4all@npm:^1.0.0":
+"gpt4all@nomic-ai/gpt4all-ts#main":
   version: 1.0.0
-  resolution: "gpt4all@npm:1.0.0"
+  resolution: "gpt4all@https://github.com/nomic-ai/gpt4all-ts.git#commit=5d11d6a42700b9f98d940076dde4b4439b976c62"
   dependencies:
     axios: ^1.3.4
     os: ^0.1.2
     progress: ^2.0.3
-  checksum: 4950651235818be3c8a8dc08388687395da976392e1cfe861ddc3c7f3574028d0794c085090eae1a83f2ffedd729b5f4e5e9dff3f2ee7276d1956213ca7584d7
+  checksum: a9c03a6ea831db07dddf392baf8cdafdfdcb91316726296675c19a8203af314a33021ac80b636d54e66d96af32e919856721837339198e7d4d749daff2247b74
   languageName: node
   linkType: hard
 
@@ -18042,7 +18042,7 @@ __metadata:
     eslint-plugin-prettier: ^4.2.1
     expr-eval: ^2.0.2
     flat: ^5.0.2
-    gpt4all: ^1.0.0
+    gpt4all: "nomic-ai/gpt4all-ts#main"
     graphql: ^16.6.0
     hnswlib-node: ^1.4.2
     html-to-text: ^9.0.5
@@ -18093,7 +18093,7 @@ __metadata:
     cohere-ai: ^5.0.2
     d3-dsv: ^2.0.0
     epub2: ^3.0.1
-    gpt4all: ^1.0.0
+    gpt4all: "*"
     hnswlib-node: ^1.4.2
     html-to-text: ^9.0.5
     mammoth: "*"
